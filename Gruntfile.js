@@ -43,6 +43,7 @@ module.exports = function(grunt) {
         cssmin: configs.cssmin(paths, customBuildDest),
         jshint: configs.jshint(paths),
         nodestatic: configs["static"](paths),
+        s3: configs.s3(paths.dist, pkg.version),
         shell: configs.shell(paths, customBuildDest),
         strip_code: configs.stripcode(paths, customBuildDest),
         uglify: configs.uglify(paths, customBuildDest),
