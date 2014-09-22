@@ -41,6 +41,7 @@ module.exports = function(grunt) {
         concat: configs.concat(paths),
         copy: configs.copy(paths),
         cssmin: configs.cssmin(paths, customBuildDest),
+        changelog: configs.changelog(pkg),
         jshint: configs.jshint(paths),
         nodestatic: configs["static"](paths),
         s3: configs.s3(paths.dist, pkg.version),
